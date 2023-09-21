@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Loged in successfully{% endblock %}
+
+{% block content %}
+<div class="container text-center text-center">
+
+    <h1>Welcome to User Registration Form</h1>
+
+    <h2>You have loged in successfully</h2>
+    <p>Click here to <a class="btn btn-primary btn-sm" href="{% url "accounts:logout" %}">Log out</a></p>
+</div>
+
+
+
+{% endblock %}

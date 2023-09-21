@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %} Verify Your Email Address {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Verify You Email</h1>
+    <p>We've emailed you to verify your email</p>
+    <p>please go to you email  inbox and click on  received activation link to confirm and complete the registration. If in case you did't gate the Activation link in you inbox Check your spam folder.</p>
+    
+   <a class="nav-link btn btn-default btn-lg" href="{% url 'home' %}">Go Back to Home</a>
+
+</div>
+
+
+
+{% endblock %}

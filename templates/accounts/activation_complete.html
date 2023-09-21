@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}Activation Completed{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Password reset Completed</h1>
+    <p>Your password has been reset successfully. You can <a href="{% url "accounts:login" %}">log in now</a></p>
+</div>
+
+
+
+{% endblock %}

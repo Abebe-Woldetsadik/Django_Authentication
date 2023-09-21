@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserForm</title>
+    <link rel="stylesheet" href="{% static "userform/css/bootstrap.min.css" %}">
+   
+</head>
+<body>
+    <nav style="background-color: #e3f2fd;" class="navbar navbar-dark bg-primary navbar-expand-sm navbar-light mynav " role="navigation" id="navbar ">
+        <div class="container">
+            <a class="navbar-brand bigbrand mynav" href="{% url 'home' %}">UserForm</a>
+                <ul class="nav navbar-nav  navbar-right">
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link btn-lg" href="{% url 'accounts:logout' %}">Logout</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link btn btn-primary btn-lg" href="{% url 'accounts:login' %}">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary btn-lg" href="{% url 'accounts:signup' %}">Sign Up</a></li>
+                
+                      {% endif %}
+                 </ul>
+        </div>
+
+    </nav>
+    <div class="container mycontent">
+        {% block  content%}
+
+        {% endblock  %}
+    </div>
+    
+</body>
+
+</html>

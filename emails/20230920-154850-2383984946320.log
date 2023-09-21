@@ -1,0 +1,15 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: abebewoldetsadik@gmail.com
+Date: Wed, 20 Sep 2023 12:48:50 -0000
+Message-ID: <169521413042.12508.1061693774053771623@DESKTOP-7QGLP9O>
+
+Someone asked for password reset for email abebewoldetsadik@gmail.com. Follow the link
+below:
+http://127.0.0.1:8000{% url "password_reset_confirm" uidb64=uid token=tok
+en %}
+Your username, in case you've forgotten: abebe
+-------------------------------------------------------------------------------
